@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
-  get 'static_pages/home'
-  get 'static_pages/add'
-  get 'static_pages/help'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'application#hello'
+  get '/help', to: 'static_pages#help'
+  get '/add',  to: 'static_pages#add'
 end
