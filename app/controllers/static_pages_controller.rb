@@ -7,4 +7,14 @@ class StaticPagesController < ApplicationController
 
   def help
   end
+  
+  def game
+      winner = [true, false].sample
+      loser = (0..19).to_a.shuffle.first
+      if winner
+        @result = [21,loser]
+      else
+        @result = [loser,21]
+      end
+  end
 end
