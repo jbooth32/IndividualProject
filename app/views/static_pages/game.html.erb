@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<style>
+h1{text-align:center;}
+h2{text-align:center;
+   font-size:30px;
+}
+p{text-align:center;}
+</style>
+
+<h1>Random Game Result</h1>
+<h2> Player 1 &emsp;<%= @result[0] %></h2>
+<h2> Player 2 &emsp;<%= @result[1] %></h2>
+<p><%= link_to "Play again", game_path %></p>
+
+</html>
