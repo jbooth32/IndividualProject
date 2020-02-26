@@ -27,5 +27,12 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     
     assert_select "title", "Help | #{@base_title}"
   end
-  
+
+  test "should get game" do
+    get game_path
+    assert_response :success
+    
+    assert_select "h2", {text:/Player [1-2]  21/}, count: 1
+    assert_select "h2", {text:/Player [1-2]  1?[0-9]/}, count:1
+  end
 end
