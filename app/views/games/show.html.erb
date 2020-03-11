@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<!DOCTYPE html>
+<html>
+<style>
+h1{text-align:center;}
+h2{text-align:center;
+   font-size:30px;
+}
+p{text-align:center;}
+</style>
+
+<h1>Game Result</h1>
+<h2> <%= @game.winner %> &emsp;<%= @game.w_score %><br/><br/><%= @game.loser %> &emsp;<%= @game.l_score %></h2>
+<h2> Date:  <%= @game.date %> </h2>
+<p><%= link_to 'Back', games_path %></p>
+
+
+

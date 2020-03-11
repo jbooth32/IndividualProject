@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  winner: MyString
+  loser: MyString
+  w_score: 1
+  l_score: 1
+  date: MyString
+
+two:
+  winner: MyString
+  loser: MyString
+  w_score: 1
+  l_score: 1
+  date: MyString
