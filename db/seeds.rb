@@ -15,6 +15,7 @@ csv.each do |row|
   g.date = row['date']
   g.winner = row['winner']
   g.loser = row['loser']
+  g.w_score = 21
   g.l_score = row['score'].to_i
   g.save
 end
