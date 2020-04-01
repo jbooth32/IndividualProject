@@ -32,9 +32,8 @@ td{font-size:20px;}
         <td><%= game.w_score.to_s + "-" + game.l_score.to_s %></td>
         <td><%= game.date %></td>
         <td><%= link_to 'Show', game %></td>
-        <!--<td><%= link_to 'Edit', edit_game_path(game) %></td>
+        <!--<td><%= link_to 'Edit', edit_game_path(game) %></td>  -->
         <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-         -->
       </tr>
     <% end %>
   </tbody>
