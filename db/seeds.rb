@@ -19,5 +19,3 @@ csv.each do |row|
   g.l_score = row['score'].to_i
   g.save
 end
-
-print Game.first.date
