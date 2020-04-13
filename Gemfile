@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails-controller-testing'
-ruby '2.5.7'
+ruby '2.6.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.7'
 gem 'bootstrap-sass', '3.4.1'
