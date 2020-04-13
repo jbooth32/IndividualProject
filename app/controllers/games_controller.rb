@@ -1,5 +1,5 @@
-#class GamesController < ApplicationController
- # before_action :set_game, only: [:show, :edit, :update, :destroy]
+class GamesController < ApplicationController
+  before_action :set_game, only: [:show, :edit, :update, :destroy]
 
   # GET /games
   # GET /games.json
@@ -75,4 +75,6 @@
     def game_params
       params.require(:game).permit(:winner, :loser, :w_score, :l_score, :date)
     end
-#end
+end
+  
+end
