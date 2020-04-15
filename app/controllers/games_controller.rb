@@ -63,6 +63,7 @@ class GamesController < ApplicationController
 
   def standings
       @game = Game.all
+  end
   
 
   private
@@ -75,6 +76,5 @@ class GamesController < ApplicationController
     def game_params
       params.require(:game).permit(:winner, :loser, :w_score, :l_score, :date)
     end
-end
   
 end
