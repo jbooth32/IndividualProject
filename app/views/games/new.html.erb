@@ -1,9 +1,26 @@
+<!DOCTYPE html>
+<html>
+<style>
+ .row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
+
 <h1>Add Game</h1>
 
 <p>
     Add a game to be included in the standings
 </p>
-
-<%= render 'form', game: @game %>
-
-<%= link_to 'Back', games_path %>
+<div class="row">
+  <div class="column">
+    <%= render 'form', game: @game %>
+  </div>
+  <div class="column">
+    <%= image_tag("ping-pong-sport.jpg", alt: "Image", :size => "400x300") %>
+  </div>
+</div>
