@@ -1,0 +1,5 @@
+<% provide(:title, "About")%>
+<h1><%= yield(:title)%></h1>
+<p>
+   This site showcases my skill development in Ruby with the navifation throughout the site and the use of the MVC architecture. A header and foooter is included in the application layout, which keeps the code for them out of the seperate views. In addition, views are DRY with the use of a dynamic title function to remove unecessary code in the views. The home page, which shows the standings for all of the games added to the site best shows how I used the MVC architecture to create the site. In a seperate helper, each object of the Game model is organized using ruby to calculate the records of each player in the database. The view for the home page then references this organized data, and uses embedded ruby to display the results for each player.
+</p>

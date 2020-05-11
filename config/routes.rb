@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/help', to: 'static_pages#help'
   get '/add',  to: 'games#new'
   get '/randgame', to: 'static_pages#randgame'
+  get '/about', to: 'static_pages#about'
 end
